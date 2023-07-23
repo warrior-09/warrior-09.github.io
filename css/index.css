@@ -9268,10 +9268,10 @@ figure.highlight pre .deletion {
 }
 
 /* 信息卡片彩带 */
-/* .author_top:hover {
+ .author_top:hover {
   background: url(https://tuchuang.voooe.cn/images/2023/01/02/snow.gif);
   background-size: cover;
-} */
+} 
 
 /* 霓虹灯css实现 light_15px 10s linear infinite */
 [data-theme="light"] #site-name,
