@@ -8215,7 +8215,7 @@ a:hover {
 /* 帧率检测 */
 #fps {
   position: fixed;
-  left: 10px;
+  right: 50px;
   bottom: 10px;
   z-index: 1919810;
 }
@@ -8782,7 +8782,7 @@ span.card-clock-weather {
 #welcome-info {
   background: linear-gradient(45deg, #b9f4f3, #e3fbf9);
   border-radius: 18px;
-  padding: 8px 8px;
+  padding: 8px;
 }
 [data-theme="dark"] #welcome-info {
   background: #212121;
