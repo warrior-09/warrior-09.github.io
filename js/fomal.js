@@ -3173,10 +3173,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://yumeng.ym727.top/images/Hercules/1.webp);
-    --darkmode-bg:url(https://yumeng.ym727.top/images/Hercules/2.webp);
-    --mobileday-bg: url(https://yumeng.ym727.top/images/Hercules/1.webp);
-    --mobilenight-bg: url(https://yumeng.ym727.top/images/hercules/2.webp);
+    --default-bg: url(https://bu.dusays.com/2023/09/03/64f41f51b12ad.webp);
+    --darkmode-bg:url(https://bu.dusays.com/2023/09/03/64f41f52cebac.webp);
+    --mobileday-bg: url(https://bu.dusays.com/2023/09/03/64f41f51b12ad.webp);
+    --mobilenight-bg: url(https://bu.dusays.com/2023/09/03/64f41f52cebac.webp);
   }`;
 }
 // 切换背景主函数
