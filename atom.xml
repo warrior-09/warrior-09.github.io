@@ -6,7 +6,7 @@
   <link href="https://ym727.top/atom.xml" rel="self"/>
   
   <link href="https://ym727.top/"/>
-  <updated>2023-09-03T16:39:25.000Z</updated>
+  <updated>2023-09-04T16:39:25.000Z</updated>
   <id>https://ym727.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【服务器基础资源巡检，含常用命令解析】</title>
+    <link href="https://ym727.top/posts/2023003d.html"/>
+    <id>https://ym727.top/posts/2023003d.html</id>
+    <published>2023-09-04T16:39:25.000Z</published>
+    <updated>2023-09-04T16:39:25.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>一、 内存占用</strong></p><p>使用<strong>free</strong>指令会显示内存的使用情况，包括实体内存，虚拟的交换文件内存，共享内存区段，以及系统核心使用的缓冲区等。</p><p>参数如下：</p><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">- </span>-b 　以Byte为单位显示内存使用情况。</span><br><span class="line"><span class="bullet">- </span>-k 　以KB为单位显示内存使用情况。</span><br><span class="line"><span class="bullet">- </span>-m 　以MB为单位显示内存使用情况。</span><br><span class="line"><span class="bullet">- </span>-h 　以合适的单位显示内存使用情况，最大为三位数，自动计算对应的单位值。</span><br></pre></td></tr></table></figure><p><img src="https://bu.dusays.com/2023/09/04/64f5a5a43963c.webp" alt=""></p><p><strong>Mem</strong> 行(第二行)是内存的使用情况。<br><strong>Swap</strong> 行(第三行)是交换空间的使用情况。<br><strong>total</strong> 列显示系统总的可用物理内存和交换空间大小。<br><strong>used</strong> 列显示已经被使用的物理内存和交换空间。<br><strong>free</strong> 列显示还有多少物理内存和交换空间可用使用。<br><strong>shared</strong> 列显示被共享使用的物理内存大小。<br><strong>buff/cache</strong> 列显示被 buffer 和 cache 使用的物理内存大小。<br><strong>available</strong> 列显示还可以被应用程序使用的物理内存大小。</p><p><strong>二、 磁盘占用</strong></p><p>Linux <strong>df</strong>（英文全拼：disk free） 命令用于显示目前在 Linux 系统上的文件系统磁盘使用情况统计。</p><p>参数如下：</p><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">- </span>-h    以易读（携带单位）的方式来展示全部磁盘使用量情况。参数后还可以指定磁盘，例如：df -h /boot</span><br><span class="line"></span><br><span class="line"><span class="bullet">- </span>-t    显示各指定类型的文件系统的磁盘空间使用情况。参数后需携带格式，例如xfs。df -t xfs显示系统中所有文件系统格式为xfs的磁盘分区使用量情况</span><br><span class="line"></span><br><span class="line"><span class="bullet">- </span>-m    以兆为单位显示磁盘使用情况</span><br><span class="line"></span><br><span class="line"><span class="bullet">- </span>-k    以kb为单位显示磁盘使用情况</span><br></pre></td></tr></table></figure><p><img src="https://bu.dusays.com/2023/09/04/64f5a5b9b443e.webp" alt=""></p><p><strong>Filesystem</strong>：表示该文件系统位于哪个分区，因此该列显示的是设备名称；<br><strong>1K-blocks</strong>：此列表示文件系统的总大小，默认以 KB 为单位；<br><strong>Used</strong>：表示用掉的硬盘空间大小；<br><strong>Available</strong>：表示剩余的硬盘空间大小；<br><strong>Use%</strong>：硬盘空间使用率。如果使用率高达 90% 以上，就需要额外注意，因为容量不足，会严重影响系统的正常运行；<br><strong>Mounted on</strong>：文件系统的挂载点，也就是硬盘挂载的目录位置。</p><p><strong>三、 CPU占用</strong></p><p>使用<strong>top</strong>命令，top 命令可以动态地持续监听进程地运行状态，默认每隔 3 秒刷新一次</p><p>前五行显示的是整个系统的资源使用状况，通过这些输出来判断服务器的资源使用状态</p><p>第六行开始显示的是系统中的进程信息</p><p><img src="https://bu.dusays.com/2023/09/04/64f5a5bf93be4.webp" alt="Snipaste_2023-09-04_17-33-36"></p><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">- </span>17：33：24： 表示系统当前时间</span><br><span class="line"><span class="bullet">- </span>up 11min：系统运行时间，表示本机已经运行了11分钟的时间</span><br><span class="line"><span class="bullet">- </span>2user： 当前登录了两个用户</span><br></pre></td></tr></table></figure><p><strong>PID</strong>：进程标示号<br><strong>USER</strong>：进程所有者<br><strong>PR</strong>：进程优先级<br><strong>NI</strong>：进程优先级别数值<br><strong>VIRT</strong>：进程占用的虚拟内存值<br><strong>RES</strong>：进程占用的物理内存值<br><strong>SHR</strong> ：进程使用的共享内存值<br><strong>S</strong> ：进程的状态，其中S表示休眠，R表示正在运行，Z表示僵死<br><strong>%CPU</strong> ：进程占用的CPU使用率<br><strong>%MEM</strong> ：进程占用的物理内存百分比<br><strong>TIME+</strong>：进程启动后占用的总的CPU时间<br><strong>Command</strong>：进程启动的启动命令名称</p>]]></content>
+    
+    
+    <summary type="html">在工作中经常去搜这些命令解析，于是整理了一下供自己参考。</summary>
+    
+    
+    
+    <category term="Linux" scheme="https://ym727.top/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://ym727.top/tags/Linux/"/>
+    
+    <category term="运维" scheme="https://ym727.top/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+  </entry>
   
   <entry>
     <title>博客文档</title>
