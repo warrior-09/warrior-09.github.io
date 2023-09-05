@@ -4,6 +4,108 @@
   
     
     <entry>
+      <title>【诗词欣赏 三】</title>
+      <link href="/posts/2023009d.html"/>
+      <url>/posts/2023009d.html</url>
+      
+        <content type="html"><![CDATA[<div class='poem'><div class='poem-title'>沁园春·雪</div><div class='poem-author'>毛泽东</div><p>北国风光，千里冰封，万里雪飘。</p><p>望长城内外，惟余莽莽；大河上下，顿失滔滔。</p><p>山舞银蛇，原驰蜡象，欲与天公试比高。</p><p>须晴日，看红装素裹，分外妖娆。</p><p>江山如此多娇，引无数英雄竞折腰。</p><p>惜秦皇汉武，略输文采；唐宗宋祖，稍逊风骚。</p><p>一代天骄，成吉思汗，只识弯弓射大雕。</p><p>俱往矣，数风流人物，还看今朝。</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 诗词 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 诗词 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【诗词欣赏 二】</title>
+      <link href="/posts/2023008d.html"/>
+      <url>/posts/2023008d.html</url>
+      
+        <content type="html"><![CDATA[<div class='poem'><div class='poem-title'>沁园春·长沙</div><div class='poem-author'>毛泽东</div><p>独立寒秋，湘江北去，橘子洲头。</p><p>看万山红遍，层林尽染；漫江碧透，百舸争流。</p><p>鹰击长空，鱼翔浅底，万类霜天竞自由。</p><p>怅寥廓，问苍茫大地，谁主沉浮？</p><p>携来百侣曾游，忆往昔峥嵘岁月稠。</p><p>恰同学少年，风华正茂；书生意气，挥斥方遒。</p><p>指点江山，激扬文字，粪土当年万户侯。</p><p>曾记否，到中流击水，浪遏飞舟？</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 诗词 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 诗词 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【诗词欣赏 一】</title>
+      <link href="/posts/2023007d.html"/>
+      <url>/posts/2023007d.html</url>
+      
+        <content type="html"><![CDATA[<div class='poem'><div class='poem-title'>水调歌头</div><div class='poem-author'>苏轼</div><p>丙辰中秋，欢饮达旦，大醉，作此篇，兼怀子由。<br>明月几时有？把酒问青天。<br>不知天上宫阙，今夕是何年？<br>我欲乘风归去，又恐琼楼玉宇，高处不胜寒。<br>起舞弄清影，何似在人间？</p><p>转朱阁，低绮户，照无眠。<br>不应有恨，何事长向别时圆？<br>人有悲欢离合，月有阴晴圆缺，此事古难全。<br>但愿人长久，千里共婵娟。</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 诗词 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 诗词 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【Linux CentOS7 安装 MySQL 5.7】</title>
+      <link href="/posts/2023006d.html"/>
+      <url>/posts/2023006d.html</url>
+      
+        <content type="html"><![CDATA[<p>MySQL 压缩包下载地址： <a href="https://dev.mysql.com/downloads/mysql/5.7.html#downloads">https://dev.mysql.com/downloads/mysql/5.7.html#downloads</a></p><p>Select Version选择5.7即可，Select Operating System 选择 Linux - Generic，Select OS Version 选择 Linux - Generic (glibc 2.12) (x86, 64-bit)。</p><p><img src="https://bu.dusays.com/2023/09/05/64f73cf3de085.webp" alt="Snipaste_2023-09-05_22-35-59"></p><h2 id="一、创建-mysql-目录">一、创建 mysql 目录</h2><p>在 /usr/local 目录下创建 mysql 目录，并上传压缩包到目录下进行解压：</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">tar</span> -xvf mysql-<span class="number">5</span>.<span class="number">7</span>.<span class="number">43</span>-linux-glibc2.<span class="number">12</span>-x86_64.tar</span><br></pre></td></tr></table></figure><h2 id="二、创建-MySQL-用户组和用户并修改权限">二、创建 MySQL 用户组和用户并修改权限</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">groupadd mysql</span></span><br><span class="line"><span class="attribute">useradd -r -g mysql mysql</span></span><br></pre></td></tr></table></figure><h2 id="三、创建数据目录并赋予权限">三、创建数据目录并赋予权限</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p  <span class="regexp">/data/my</span>sql               <span class="comment"># 创建目录</span></span><br><span class="line">chown mysql:mysql -R <span class="regexp">/data/my</span>sql    <span class="comment"># 赋予权限</span></span><br></pre></td></tr></table></figure><h2 id="四、配置-my-cnf">四、配置 my.cnf</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim <span class="regexp">/etc/my</span>.cnf</span><br></pre></td></tr></table></figure><p>内容如下：</p><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[mysqld]</span></span><br><span class="line"><span class="attr">bind-address</span>=<span class="number">0.0</span>.<span class="number">0.0</span></span><br><span class="line"><span class="attr">port</span>=<span class="number">3306</span></span><br><span class="line"><span class="attr">user</span>=mysql</span><br><span class="line"><span class="attr">basedir</span>=/usr/local/mysql/mysql-<span class="number">5.7</span>.<span class="number">43</span></span><br><span class="line"><span class="attr">datadir</span>=/data/mysql</span><br><span class="line"><span class="attr">socket</span>=/tmp/mysql.sock</span><br><span class="line"><span class="attr">log-error</span>=/data/mysql/mysql.err</span><br><span class="line"><span class="attr">pid-file</span>=/data/mysql/mysql.pid</span><br><span class="line"><span class="comment">#character config</span></span><br><span class="line"><span class="attr">character_set_server</span>=utf8mb4</span><br><span class="line"><span class="attr">symbolic-links</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">explicit_defaults_for_timestamp</span>=<span class="literal">true</span></span><br></pre></td></tr></table></figure><table><tr><td bgcolor=MistyRose>注意：如果 my.cnf 文件本身就已经存在，那么里面的配置内容与我们自己配置的内容有冲突的话，需要把原先的内容注释掉，否则后面启动会报错。</td></tr></table><h2 id="五、初始化数据库">五、初始化数据库</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="regexp">/usr/</span>local<span class="regexp">/mysql/my</span>sql-<span class="number">5.7</span>.<span class="number">43</span><span class="regexp">/bin/</span>      <span class="comment"># 进入 mysql 的 bin 目录</span></span><br><span class="line">.<span class="regexp">/mysqld --defaults-file=/</span>etc<span class="regexp">/my.cnf --basedir=/u</span>sr<span class="regexp">/local/my</span>sql<span class="regexp">/mysql-5.7.43 --datadir=/</span>data<span class="regexp">/mysql/</span> --user=mysql --initialize     <span class="comment"># 初始化</span></span><br></pre></td></tr></table></figure><h2 id="六、查看初始密码">六、查看初始密码</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat <span class="regexp">/data/my</span>sql/mysql.err     <span class="comment"># A temporary password... 最后那一串随机字符就是</span></span><br></pre></td></tr></table></figure><h2 id="七、启动-MySQL，并更改-root-密码">七、启动 MySQL，并更改 root 密码</h2><p>先将 mysql.server 放置到 /etc/init.d/mysql 中：</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp <span class="regexp">/usr/</span>local<span class="regexp">/mysql/my</span>sql-<span class="number">5.7</span>.<span class="number">43</span><span class="regexp">/support-files/my</span>sql.server <span class="regexp">/etc/i</span>nit.d/mysql</span><br></pre></td></tr></table></figure><p>启动：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">service mysql <span class="built_in">start</span></span><br><span class="line"><span class="built_in">ps</span> <span class="literal">-ef</span>|grep mysql</span><br></pre></td></tr></table></figure><p>能看到 SUCCESS! 说明 MySQL 已经安装成功了。</p><p>修改密码：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./mysql -u root -p       <span class="comment"># bin 目录下执行</span></span><br></pre></td></tr></table></figure><p>再执行下面三步操作，然后重新登录：</p><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SET</span> <span class="keyword">PASSWORD</span> = <span class="keyword">PASSWORD</span>(<span class="string">&#x27;123456&#x27;</span>);</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> <span class="keyword">PASSWORD</span> EXPIRE NEVER;</span><br><span class="line">FLUSH <span class="keyword">PRIVILEGES</span>;            </span><br></pre></td></tr></table></figure><h2 id="八、远程连接">八、远程连接</h2><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">use mysql      <span class="comment"># 访问 mysql 表</span></span><br><span class="line">update <span class="keyword">user</span> <span class="title">set</span> host = &#x27;%&#x27; where <span class="keyword">user</span> <span class="title">= &#x27;root</span>&#x27;;  <span class="comment"># 使 root 能再任何 host 访问</span></span><br><span class="line">FLUSH PRIVILEGES;    <span class="comment"># 刷新</span></span><br></pre></td></tr></table></figure><p>如果不希望每次都到 bin 目录下使用 MySQL 命令则执行以下命令：</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s <span class="regexp">/usr/</span>local<span class="regexp">/mysql/my</span>sql-<span class="number">5.7</span>.<span class="number">38</span><span class="regexp">/bin/my</span>sql <span class="regexp">/usr/</span>bin</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> MySQL数据库 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【记录2023年8月服务器openssh升级】</title>
       <link href="/posts/2023005d.html"/>
       <url>/posts/2023005d.html</url>
