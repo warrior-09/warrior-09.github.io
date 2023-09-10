@@ -2,33 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ym727.top/tags/index.html</loc>
-    
-    <lastmod>2023-09-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ym727.top/social/link/index.html</loc>
-    
-    <lastmod>2023-09-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ym727.top/bangumis/index.html</loc>
-    
-    <lastmod>2023-09-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ym727.top/categories/index.html</loc>
     
     <lastmod>2023-09-10</lastmod>
@@ -38,25 +11,7 @@
   </url>
   
   <url>
-    <loc>https://ym727.top/box/collect/index.html</loc>
-    
-    <lastmod>2023-09-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ym727.top/box/gallery/index.html</loc>
-    
-    <lastmod>2023-09-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ym727.top/box/nav/index.html</loc>
+    <loc>https://ym727.top/tags/index.html</loc>
     
     <lastmod>2023-09-10</lastmod>
     
@@ -129,6 +84,51 @@
   
   <url>
     <loc>https://ym727.top/social/fcircle/index.html</loc>
+    
+    <lastmod>2023-09-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ym727.top/social/link/index.html</loc>
+    
+    <lastmod>2023-09-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ym727.top/bangumis/index.html</loc>
+    
+    <lastmod>2023-09-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ym727.top/box/collect/index.html</loc>
+    
+    <lastmod>2023-09-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ym727.top/box/gallery/index.html</loc>
+    
+    <lastmod>2023-09-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ym727.top/box/nav/index.html</loc>
     
     <lastmod>2023-09-10</lastmod>
     
